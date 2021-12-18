@@ -1,0 +1,18 @@
+h1 {
+    color: yellow;
+    background-color: seagreen;
+    padding: 10px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div h2 {
+    color: yellow;
+    background-color: seagreen;
+    padding: 5px;
+    text-align: center;
+}
