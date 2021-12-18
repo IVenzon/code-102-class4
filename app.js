@@ -21,9 +21,22 @@ if (christmastracker == 12)
 {
     christmastime = "Christmas is almost here!";
 }
-else
+else if (christmastracker <= 11 && christmastracker >= 1)
 {
     christmastime = "Christmas can't come any sooner!";
 }
+else
+{
+    christmastime = "Either you made a mistake or you're from a different planet!";
+}
 
 console.log(christmastime);
+
+var whatIWant1 = prompt("What's your name?");
+var whatIWant2 = prompt("What do you want most for Christmas?");
+var whatIWant3 = prompt("What's your favorite Christmas food?");
+
+var myWishlist = "Hi, my name is " + whatIWant1 + ", and the thing I want the most for Christmas is " + whatIWant2 + ". While I wait for Christmas day, I think I'll eat a lot of " + whatIWant3 + ".";
+
+console.log(myWishlist);
+
