@@ -7,6 +7,8 @@ h1 {
 }
 
 body{
+    background-image: url(https://cdn.pixabay.com/photo/2013/02/18/18/36/christmas-tree-83121_1280.jpg);
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
@@ -24,17 +26,18 @@ div h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: lightgreen;
     border: solid 10px gold;
+    margin: 20px;
 }
 
 .listcontainer {
     display: flex;
-    justify-content: space-around;
-    background-color: lightgreen;
-    margin: 10px;
+    justify-content: space-evenly;
+    margin: 20px;
 }
 
 .lists {
-    width: 49%;
+    width: 45%;
+    background-color: lightgreen;
     border: solid 10px gold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
