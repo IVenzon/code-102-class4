@@ -3,6 +3,7 @@ h1 {
     background-color: seagreen;
     padding: 10px;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body{
@@ -15,4 +16,41 @@ div h2 {
     background-color: seagreen;
     padding: 5px;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.intro {
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightgreen;
+    border: solid 10px gold;
+}
+
+.listcontainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgreen;
+    margin: 10px;
+}
+
+.lists {
+    width: 49%;
+    border: solid 10px gold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.surveycontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.survey {
+    width: 30%;
+    background-color: lightgreen;
+    padding: 10px;
+    border: solid 10px gold;
+}
+
+img {
+    border: solid 10px gold;
 }
