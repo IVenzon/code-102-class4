@@ -1,42 +1,77 @@
-var naughtyornice = confirm("Ho ho ho! Were you on the nice list this year?");
-
-var messagefromsanta = "";
-
-if (naughtyornice == true)
+function naughtyOrNice()
 {
-    messagefromsanta = "Ho ho ho, very good!";
-}
-else
-{
-    messagefromsanta = "Hmmm, maybe next year!"
-}
+    var userEvaluation = confirm("Ho ho ho! Were you on the nice list this year?");
+    var messagefromsanta = "";
 
-console.log(messagefromsanta);
+    if (userEvaluation == true)
+    {
+        messagefromsanta = "Ho ho ho, very good!";
+    }
+    else
+    {
+        messagefromsanta = "Hmmm, maybe next year!"
+    }
 
-var christmastracker = prompt("What's the current month (in number form)?");
-
-var christmastime = "";
-
-if (christmastracker == 12)
-{
-    christmastime = "Christmas is almost here!";
-}
-else if (christmastracker <= 11 && christmastracker >= 1)
-{
-    christmastime = "Christmas can't come any sooner!";
-}
-else
-{
-    christmastime = "Either you made a mistake or you're from a different planet!";
+    document.write(messagefromsanta);
 }
 
-console.log(christmastime);
+naughtyOrNice();
 
-var whatIWant1 = prompt("What's your name?");
-var whatIWant2 = prompt("What do you want most for Christmas?");
-var whatIWant3 = prompt("What's your favorite Christmas food?");
+function christmasTracker(currentMonth)
+{
+    var christmasTime = "";
 
-var myWishlist = "Hi, my name is " + whatIWant1 + ", and the thing I want the most for Christmas is " + whatIWant2 + ". While I wait for Christmas day, I think I'll eat a lot of " + whatIWant3 + ".";
+    if (!currentMonth)
+    {
+        currentMonth = prompt("What's the current month (in number form)?");
+    }
 
-console.log(myWishlist);
+    if (currentMonth == 12)
+    {
+        christmasTime = "Christmas is almost here!";
+    }
+    else if (currentMonth <= 11 && currentMonth >= 1)
+    {
+        christmasTime = "Christmas can't come any sooner!";
+    }
+    else
+    {
+        console.log("Either you made a mistake or you're from a different planet!");
+        christmasTracker();
+    }
+
+    document.write(christmasTime);
+}
+
+christmasTracker();
+
+function christmasWishlist()
+{
+    var name = prompt("What's your name?");
+    while (!name)
+    {
+        name = prompt("Error: Please enter a name!");
+    }
+    var gift = prompt("What do you want most for Christmas?");
+    while (!gift)
+    {
+        gift = prompt("Error: Please enter what you want!");
+    }
+    var food = prompt("What's your favorite Christmas food?");
+    while (!food)
+    {
+        food = prompt("Error: Please enter a food!");
+    }
+    
+    var myWishlist = "Hi, my name is " + name + ", and the thing I want the most for Christmas is " + gift + ". While I wait for Christmas day, I think I'll eat a lot of " + food + ".";
+
+    document.write(myWishlist);
+}
+
+christmasWishlist();
+
+
+
+
+
 
