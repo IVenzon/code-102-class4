@@ -76,6 +76,7 @@ function cookiesForSanta()
     for (var i = 1; i <= numOfCookies; i++)
     {
         document.write('<br><img height=50px src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Choco_chip_cookie.png">');
+        document.write("Cookie number: " + i);
     }
 }
 
