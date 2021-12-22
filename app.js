@@ -1,18 +1,18 @@
 function naughtyOrNice()
 {
     var userEvaluation = confirm("Ho ho ho! Were you on the nice list this year?");
-    var messagefromsanta = "";
+    var messageFromSanta = "";
 
     if (userEvaluation == true)
     {
-        messagefromsanta = "Ho ho ho, very good!";
+        messageFromSanta = "Ho ho ho, very good!";
     }
     else
     {
-        messagefromsanta = "Hmmm, maybe next year!"
+        messageFromSanta = "Hmmm, maybe next year!"
     }
 
-    document.write(messagefromsanta);
+    document.write(messageFromSanta);
 }
 
 naughtyOrNice();
@@ -70,6 +70,16 @@ function christmasWishlist()
 
 christmasWishlist();
 
+function cookiesForSanta()
+{
+    let numOfCookies = prompt("How many cookies do you want to leave for Santa?");
+    for (var i = 1; i <= numOfCookies; i++)
+    {
+        document.write('<br><img height=50px src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Choco_chip_cookie.png">');
+    }
+}
+
+cookiesForSanta();
 
 
 
